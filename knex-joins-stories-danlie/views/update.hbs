@@ -1,0 +1,24 @@
+<h1>Update Womble Characteristics</h1>
+
+<form action="/update" method="post">
+
+<select name="name">
+{{#each data2}}
+  <option value ="{{this.name}}" name="optionName">{{this.name}}</option>
+{{/each }}
+</select>
+
+<select name="description">
+{{#each data}}
+  <option value ="{{this.description}}" name="optionName">{{this.description}}</option>
+{{/each }}
+</select>
+
+<input type = "submit" value = "submit"></input>
+</form>
+
+{{#if submitted}}
+    <p>You update {{name}}'s characteristics!</p>
+{{/if}}
+
+<li><a href="/">Home</a></li>

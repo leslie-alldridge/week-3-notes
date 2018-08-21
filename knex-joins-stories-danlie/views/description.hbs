@@ -1,0 +1,16 @@
+<form action="/description" method="POST">
+
+<input placeholder="womble desc" type="text" name="description" />
+
+
+<input id="submit" type="submit" name="commit" value="Add Description" />
+
+</form>
+
+{{#if submitted}}
+    <p>You added {{name}} to the database!</p>
+    <p> you added a new description {{description}}</p>
+{{/if}}
+
+
+<li><a href="/">Home</a></li>

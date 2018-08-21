@@ -1,0 +1,19 @@
+<h1> Add Womble</h1>
+
+<form action="/new" method="POST">
+
+<input placeholder="Womble Name" type="text" name="name" />
+<input placeholder="Description" type="text" name="description" />
+
+
+<input id="submit" type="submit" name="commit" value="Create Womble" />
+
+</form>
+
+{{#if submitted}}
+    <p>You added {{name}} to the database!</p>
+{{/if}}
+
+<li><a href="/">Home</a></li>
+
+<img src="https://ents24.imgix.net/image/000/010/810/53205fce017d58187df4e5e8345a3274c6c0f670.jpg?w=358&h=268&auto=format" />

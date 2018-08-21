@@ -1,0 +1,15 @@
+<h1>Add Rubbish</h1>
+
+<form action="/addtrash" method="post">
+<input name = "trashDesc" type = "text" placeholder = "Trash Description" ></input>
+
+<input type = "submit" value = "submit"></input>
+</form>
+
+{{#if submitted}}
+    <p>You added {{newTrash}} to the database!</p>
+{{/if}}
+
+<li><a href="/">Home</a></li>
+
+<img src="https://idiotyouth.files.wordpress.com/2012/11/rubbish-tip.jpg"/>

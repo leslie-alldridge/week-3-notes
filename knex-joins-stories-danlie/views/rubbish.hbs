@@ -1,0 +1,24 @@
+<h1>Assign Rubbish</h1>
+
+<form action="/rubbish" method="post">
+{{!-- <input name = "womble" type = "text" placeholder = "name" >{{name}}</input> --}}
+
+<select name="name">
+{{#each data2}}
+  <option value ="{{this.name}}" name="optionName">{{this.name}}</option>
+{{/each }}
+</select>
+
+<select name="selectpicker">
+{{#each data}}
+  <option value ="{{this.name}}" name="optionName">{{this.name}}</option>
+{{/each }}
+</select>
+<input type = "submit" value = "submit"></input>
+</form>
+
+{{#if submitted}}
+    <p>You updated their rubbish type!</p>
+{{/if}}
+
+<li><a href="/">Home</a></li>

@@ -1,0 +1,22 @@
+<h1>Delete Womble</h1>
+
+<form action="/delete" method="POST">
+
+<select name="name">
+{{#each data}}
+  <option value ="{{this.name}}" name="optionName">{{this.name}}</option>
+{{/each }}
+</select>
+
+<input id="submit" type="submit" name="commit" value="Delete Womble" />
+
+</form>
+
+<img src="https://images-na.ssl-images-amazon.com/images/I/61aFwU9ReNL._UX385_.jpg" />
+
+
+{{#if submitted}}
+    <p>You deleted {{name}} from the database!</p>
+{{/if}}
+
+<li><a href="/">Home</a></li>
