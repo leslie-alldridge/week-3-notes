@@ -1,0 +1,49 @@
+h1 {
+    font-size: 3em;
+}
+
+.container{
+
+        background-image: url('https://images.unsplash.com/16/unsplash_5263607dd1bfc_2.jpg');
+        background-size: 140%;
+        background-repeat: no-repeat;
+        display: flex;  
+        flex-flow: column wrap;
+        font-weight: bold;
+        text-align: center; 
+}
+
+.header {
+    background-color: black;
+}
+
+.OtherBlogs, .OtherBlog {
+    float:left;
+    background-color: antiquewhite;
+}
+
+.OtherBlogs, ul {
+    padding: 10px;
+    padding-bottom: 100%;
+}
+
+.Posts  {
+    display: flex;
+    max-width: 72%;
+    align-content: center;
+    float: left;
+    background-color: white;
+    padding: 15px;
+}
+
+.RecentEntries {
+  display:flex;
+    float:right;
+    padding-right: 35px;
+    
+}
+
+.footer {
+    color:white;
+    font-size: 1.5em;
+}
